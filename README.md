@@ -53,9 +53,9 @@ Run the following command:
 ```bash
 python app.py
 ```
-Your Flask server will start locally at:
+The click on the link in terminal for opening the local Server
 ```
-http://127.0.0.1:5000/
+http://{ip}/
 ```
 
 ### 📌 **2. Optionally Expose via Ngrok**
@@ -70,7 +70,7 @@ Use the generated **public URL** to access the app from anywhere!
 ## ✨ Usage Guide
 
 ### **Step 1:** Open the Web Interface
-Go to `http://127.0.0.1:5000/` and enter the required health details:
+Go to the browser in which the link is opened and enter the required health details:
 - **Age**
 - **Smoking History** (`Never`, `No Info`, `Former Smoker`, `Current Smoker`)
 - **Hypertension** (`Yes` or `No`)
@@ -126,11 +126,5 @@ This project is **open-source** under the MIT License. Feel free to contribute a
 Contributions & feedback are welcome! 🤖🔥
 ```
 
----
 
-### 🔹 **What To Do Next**
-1️⃣ Create a file named **`README.md`** in your project folder.  
-2️⃣ Copy & paste the Markdown content above into the file.  
-3️⃣ Save it and push it to GitHub (`git add README.md && git commit -m "Added README" && git push`).  
 
-Let me know if you need **modifications** or additional sections! 🚀🔥
