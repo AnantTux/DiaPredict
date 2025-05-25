@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="title">Diabetes Prediction System</h1>
+    <form id="prediction-form" class="form-container" action="/predict" method="post">
+        <label>Age (years):</label>
+        <input type="number" name="age" placeholder="E.g., 45" required><br>
+
+        <label>Smoking History:</label>
+        <select name="smoking_history" required>
+            <option value="0">Never</option>
+            <option value="1">No Info</option>
+            <option value="2">Former Smoker</option>
+            <option value="3">Current Smoker</option>
+        </select><br>
+
+        <label>Hypertension:</label>
+        <select name="hypertension" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label>Heart Disease:</label>
+        <select name="heart_disease" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label>BMI (kg/m²):</label>
+        <input type="number" name="bmi" placeholder="E.g., 22.5" step="0.1" required><br>
+
+        <label>HbA1c Level (%):</label>
+        <input type="number" name="hba1c_level" placeholder="E.g., 5.4" step="0.1" required><br>
+
+        <label>Glucose Level (mg/dL):</label>
+        <input type="number" name="glucose_level" placeholder="E.g., 90" step="0.1" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+    <h2 class="prediction-title">Predictions:</h2>
+    <ul id="result"></ul>
+
+    <script>
+        document.querySelector("#prediction-form").onsubmit = async function(event) {
+            event.preventDefault();
+
+            let formData = new FormData(event.target);
+
+            let response = await fetch("/predict", { method: "POST", body: formData });
+            let data = await response.json();
+
+            let resultList = document.getElementById("result");
+            resultList.innerHTML = "";
+
+            for (let model in data) {
+                let listItem = document.createElement("li");
+                listItem.innerText = model + ": " + data[model];
+                resultList.appendChild(listItem);
+            }
+        };
+    </script>
+</body>
+</html>

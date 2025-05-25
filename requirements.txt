@@ -1,0 +1,8 @@
+flask
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+pickle-mixin
+flask-ngrok  # If running in Google Colab
