@@ -124,7 +124,6 @@ This project is **open-source** under the MIT License. Feel free to contribute a
 
 🚀 **Built for accurate diabetes risk assessment using machine learning!**  
 Contributions & feedback are welcome! 🤖🔥
-```
 
 
 
