@@ -1,6 +1,6 @@
 # 🩺 Diabetes Prediction System
 
-This Flask-based web application predicts the likelihood of diabetes using **multiple machine learning models**, including **Decision Tree, KNN, Naive Bayes, Random Forest, Logistic Regression, and SVM**.
+I created a \*\*Flask-based web application\*\* that predicts the \*\*likelihood of diabetes\*\* using a range of \*\*machine learning models\*\*, including \*\*Decision Tree\*\*, \*\*KNN\*\*, \*\*Naive Bayes\*\*, \*\*Random Forest\*\*, and \*\*SVM\*\*. Combining these models helps enhance the overall \*\*accuracy and reliability\*\* of the predictions. To make the application \*\*accessible online\*\*, I integrated \*\*Ngrok\*\*. This project was part of my presentation at \*\*Exhibition One at VIT Bhopal\*\*.
 
 ## 🚀 Features
 - ✅ Predicts diabetes risk using multiple ML models  
