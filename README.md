@@ -125,5 +125,13 @@ This project is **open-source** under the MIT License. Feel free to contribute a
 🚀 **Built for accurate diabetes risk assessment using machine learning!**  
 Contributions & feedback are welcome! 🤖🔥
 
+![VIT Bhopal](https://img.shields.io/badge/VIT-Bhopal-blue)
+![CSS](https://img.shields.io/badge/CSS-Styles-orange)
+![HTML](https://img.shields.io/badge/HTML-Markup-red)
+![Python](https://img.shields.io/badge/Python-Programming-blue)
+![ML](https://img.shields.io/badge/Machine%20Learning-AI-brightgreen)
+![Diabetes](https://img.shields.io/badge/Diabetes-Prediction-purple)
+![Ngrok](https://img.shields.io/badge/Ngrok-Tunneling-black)
+![MIT License](https://img.shields.io/badge/License-MIT-green)
 
 
