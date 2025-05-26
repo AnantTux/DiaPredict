@@ -14,8 +14,8 @@ I created a **Flask-based web application** that predicts the **likelihood of di
 
 ### 📌 **1. Clone the Repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/diabetes-prediction.git
-cd diabetes-prediction
+git clone https://github.com/AnantTux/DiaPredict.git
+cd DiaPredict
 ```
 
 ### 📌 **2. Install Dependencies**
